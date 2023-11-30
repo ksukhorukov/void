@@ -11,7 +11,6 @@ STR_SISE = 255;
 
 void usage(char **argv) {
   printf("%c[1;34m\nDraws pyramid from stars...\n\nUsage: %s <number>\n\n", 27, argv[0]);
-  return;
 }
 
 void only_positive_numbers_error() {
@@ -54,6 +53,11 @@ void main(int argc, char **argv) {
   }
 
   if(argc > 2) {
+    usage(argv);
+    return;
+  }
+
+  if(strcmp(argv[1], (const char*)("help")) == 0) {
     usage(argv);
     return;
   }

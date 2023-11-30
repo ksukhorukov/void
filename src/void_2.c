@@ -14,7 +14,7 @@ void print_odd(long long n) {
   }
 
   if(n % 2 == 1) {
-    printf("%lld ", n);
+    printf("%c[1;32m%lld ", 27, n);
   } 
 
   return print_odd(n - 1);
@@ -27,26 +27,24 @@ void print_even(long long n) {
   }
 
   if(n % 2 == 0) {
-    printf("%lld ", n);
+    printf("%c[1;32m%lld ", 27, n);
   } 
 
   return print_even(n - 1);
 }
 
 void usage(char **argv) {
-  printf("\nUsage: %s odd|even <number>\n", argv[0]);
-  printf("\nExample: %s even 1000\n\n", argv[0]);
+  printf("%c[1;32m\nUsage: %s odd|even <number>\n", 27, argv[0]);
+  printf("%c[1;32m\nExample: %s even 1000\n\n", 27, argv[0]);
   return;
 }
 
 void only_odd_or_even_error(char **argv) {
-  printf("\nError: only 'odd' or 'even' values are allowed as the first parameter\n\n");
-  usage(argv);
-  return;
+  printf("%c[1;31m\nError: only 'odd' or 'even' values are allowed as the first parameter\n\n", 27);
 }
 
 void only_positive_numbers_error() {
-  printf("\nError: number passed is less than zero but only positive numbers allowed\n\n");
+  printf("%c[1;31m\nError: number passed is less than zero but only positive numbers allowed\n\n", 27);
 }
 
 void main(int argc, char **argv) {
