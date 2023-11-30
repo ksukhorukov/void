@@ -6,7 +6,7 @@
 DEFAULT_N = 25;
 
 void exit_from_the_void(long long unsigned n) {
-  printf("%lld ", n);
+  printf("%c[1;33m%lld ", 27, n);
 
   if(n == 1) { 
    printf("\n");
@@ -17,7 +17,7 @@ void exit_from_the_void(long long unsigned n) {
 }
   
 void usage(char **argv) {
-  printf("\nUsage: %s <number>\n\n", argv[0]);
+  printf("%c[1;33m\nUsage: %s <number>\n\n", 27, argv[0]);
 }
 
 void main(int argc, char **argv) {
