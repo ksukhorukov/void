@@ -1,4 +1,4 @@
-/* prints the set of digits from N to 1 */
+/* Prints the set of digits from N to 1 */
 
 #include <stdio.h>
 #include <stdlib.h>
