@@ -1,3 +1,5 @@
+/* prints the set of digits from N to 1 and filters numbers by oddity or evennes */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

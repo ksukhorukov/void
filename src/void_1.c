@@ -1,14 +1,14 @@
+/* prints the set of digits from N to 1 */
+
 #include <stdio.h>
 #include <stdlib.h>
-
-/* prints the set of digits from N to 1 in dependence of it's oddity or evennes */
 
 DEFAULT_N = 25;
 
 void exit_from_the_void(long long unsigned n) {
   printf("%lld ", n);
 
-  if(n == 0) { 
+  if(n == 1) { 
    printf("\n");
    return;
   } 
