@@ -1,3 +1,3 @@
 build:
-	gcc -w void_1.c -o void_1
-	gcc -w void_2.c -o void_2 
+	gcc -w ./src/void_1.c -o ./bin/void_1
+	gcc -w ./src/void_2.c -o ./bin/void_2 
