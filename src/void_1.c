@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-DEFAULT_N = 25;
+DEFAULT_N = 20;
 
 void exit_from_the_void(long long unsigned n) {
   printf("%c[1;33m%lld ", 27, n);
