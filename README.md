@@ -14,4 +14,4 @@
 ./run.sh
 ```
 
-![console screen](../imgs/runner.png)
+![console screen](imgs/runner.png)
