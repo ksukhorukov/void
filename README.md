@@ -1,6 +1,6 @@
 # VOID
 
-## Multiple examples of 'void' type usage in ANSI C99
+## Multiple examples of void type usage in ANSI C99
 
 ### Examples
 
