@@ -10,16 +10,16 @@ STR_SISE = 255;
 
 
 void usage(char **argv) {
-  printf("\nDraws pyramid from stars...\n\nUsage: %s <number>\n\n", argv[0]);
+  printf("%c[1;34m\nDraws pyramid from stars...\n\nUsage: %s <number>\n\n", 27, argv[0]);
   return;
 }
 
 void only_positive_numbers_error() {
-  printf("\nError: number passed is less than zero but only positive numbers allowed\n\n");
+  printf("%c[1;34m\nError: number passed is less than zero but only positive numbers allowed\n\n", 27);
 }
 
 void too_high_error() {
-  printf("\nError: number passed is too high, maximum number is %d\n\n", MAXIMUM_NUMBER);
+  printf("%c[1;34m\nError: number passed is too high, maximum number is %d\n\n", 27, MAXIMUM_NUMBER);
 }
 
 void draw_tsunami(long long n, long long limit, char* str) {
@@ -40,7 +40,7 @@ void draw_tsunami(long long n, long long limit, char* str) {
     counter += 1;
   }
   
-  printf("%s\n", str);
+  printf("%c[1;34m%s\n", 27, str);
 
   return draw_tsunami(n - 1, limit, str);
 }
